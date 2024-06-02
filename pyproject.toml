@@ -6,8 +6,12 @@ authors = ["Julien Dubost <julien.dubost@planny.ch>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">3.8"
+python = ">3.11"
 pillow = "^10.2.0"
+black = "^24.3.0"
+flask = "^3.0.2"
+redis = "^5.0.3"
+ipython = "^8.23.0"
 
 
 [build-system]

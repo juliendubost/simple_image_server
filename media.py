@@ -2,6 +2,7 @@ def ratio(height, width):
     ratio = float(width) / float(height)
     return ratio
 
+
 def sanitze(value):
     # Make sure people don't crash the server with huge image sizes.
     value = int(value)
@@ -9,12 +10,13 @@ def sanitze(value):
         value = 4096
     return value
 
+
 def measurements(image, width=None, height=None):
     # Get the current image size.
     (current_width, current_height) = image.size
     ratio = float(current_width) / float(current_height)
 
-    #If nothing is passed in, set the width.
+    # If nothing is passed in, set the width.
     if not width and not height:
         width = 150
 
